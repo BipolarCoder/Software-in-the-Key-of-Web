@@ -1,0 +1,81 @@
+A Design Pattern for Complex Systems
+
+
+
+Prelude
+
+Hey, you just read me,
+
+and I AM crazy,
+
+but here’s my theory,
+
+so try it maybe?
+
+It’s an awful thing to lose one’s mind.
+
+It has happened to me twice because of a psychiatric disorder I have called Bipolar One Disorder.
+
+I have a lot I could say, describe, and explain about what I’ve gone through because of my disorder, but those are things for another time and place. 
+
+This text is about the main theme that has driven me to the highest of highs and the lowest of lows of my disorder: writing software.
+
+The idea presented here is simple and easy to understand. You don’t have to be someone who writes software to understand it, but it helps if you do. 
+
+If you are someone who writes software then I highly encourage you to try and implement my idea in your favorite programming language. I’ve found it to be a fun test of how well you know the programming language and how far you can stretch your thinking.
+
+First Movement:
+
+Allegro con Salute Mentale
+
+“Computer Science is no more about computers than astronomy is about telescopes.”
+
+– Edsger W. Dijkstra
+
+There are two things we need to clarify first before we get down to business:
+
+What is a design pattern?
+What does ‘complex’ mean?
+From Wikipedia:
+
+“In software engineering, a design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. A design pattern is not a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.”
+
+From Dictionary.com:
+
+com·plex   [adj., v. kuhm-pleks, kom-pleks; n. kom-pleks] adjective
+
+composed of many interconnected parts; compound; composite: a complex highway system.
+characterized by a very complicated or involved arrangement of parts, units, etc.: complex machinery
+so complicated or intricate as to be hard to understand or deal with: a complex problem.
+“Software in the Key of Web” (SITKOW) is a design pattern for complex systems. A general reusable solution for creating software composed of many interconnected parts that each can be characterized as a complicated or an involved arrangement of simpler parts. 
+
+The goal of SITKOW is to avoid creating systems that are so complicated that they become hard to understand or deal with. To put it more poetically:
+
+Software in the Key of Web is writing software the way composers write music.
+
+Thereare only two guidelines for SITKOW:
+
+Every part of the system has a path that follows the pattern /model/key/model/key/
+Every part of the system supports the 4 basic operations of persistent storage: create, read, update, and delete (CRUD).
+Second Movement
+
+Adagio Rendersi Conto Di
+
+“The brain is like a muscle. When it is in use we feel very good. Understanding is joyous.”
+
+Carl Sagan
+How would YOU create a system that follows the SITKOW guidelines? It’s your turn to take out your code editor and play your first node, err… note.
+
+The SITKOW guidelines restated in a slightly different form:
+
+Everything is a node
+Nodes have a path that follows the pattern: /model/key/model/key/
+Nodes are accessed and manipulated through CRUD operations.
+Nodes can contain other nodes in the pattern /model/key/model/key/
+Your assignment is to create a system that satisfies the above conditions.
+
+What language did you use? How does it work? Was it easy or hard to do? What problems or issues did you run into. Post your solution to github with the tag ‘SITKOW’, tweet a link to your solution via Twitter, and share the link with your friends on Facebook.
+
+As an extra incentive, I declare that your are not a coder/programmer/developer/software engineer if you can’t create a basic SITKOW system :-P
+
+Code on!
