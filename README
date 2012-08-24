@@ -57,6 +57,9 @@ Thereare only two guidelines for SITKOW:
 
 Every part of the system has a path that follows the pattern /model/key/model/key/
 Every part of the system supports the 4 basic operations of persistent storage: create, read, update, and delete (CRUD).
+
+
+
 Second Movement
 
 Adagio Rendersi Conto Di
