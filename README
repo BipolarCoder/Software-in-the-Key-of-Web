@@ -1,62 +1,94 @@
+BipolarCoder:
+
+Software 
+in the
+Key of Web
+
 A Design Pattern for Complex Systems
 
+Prelude and Symphony in C
+
+Michael Jay Hoover
+September 2012
+
+
+
+
+BipolarCoder: Software in the Key of Web by Michael Jay Hoover is licensed under a Creative Commons 
+Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
 
 Prelude
 
 Hey, you just read me,
-
 and I AM crazy,
-
 but here’s my theory,
-
 so try it maybe?
 
-It’s an awful thing to lose one’s mind.
 
-It has happened to me twice because of a psychiatric disorder I have called Bipolar One Disorder.
+  It’s an awful thing to lose one’s mind.
 
-I have a lot I could say, describe, and explain about what I’ve gone through because of my disorder, but those are things for another time and place. 
+	It has happened to me twice because of a psychiatric disorder I have called Bipolar One Disorder.
 
-This text is about the main theme that has driven me to the highest of highs and the lowest of lows of my disorder: writing software.
+	I have a lot I could say, describe, and explain about what I’ve gone through because of my disorder, but those are things for another time and place. 
 
-The idea presented here is simple and easy to understand. You don’t have to be someone who writes software to understand it, but it helps if you do. 
+	This text is about the main theme that has been driving the ups and downs of my disorder: writing software. 
 
-If you are someone who writes software then I highly encourage you to try and implement my idea in your favorite programming language. I’ve found it to be a fun test of how well you know the programming language and how far you can stretch your thinking.
+	This idea, these thoughts, and these conclusions have literally driven me crazy twice in the last 7 years. 
+
+	There are no upsides to having my disorder, but there is a symptom that I’m going to try and utilize to get some attention: cockiness. I know that what I’ve been working on is different and interesting, I’m just going to take it to the next level. Not crazy, just a little over-the-top ;-)
+
+	I'm not overly confident that the following text is going to make complete sense at all times. I am a coder, not a writer. 
+
+	The idea presented here is simple and easy to understand. You should have a basic understanding of computer programming terms such as object, model, key, etc. 
+
+	I highly encourage you to try and implement my idea in your favorite programming language. I’ve found it to be a fun test of how well you know the programming language and how far you can stretch your thinking.
+
+
+Symphony in C
 
 First Movement:
-
 Allegro con Salute Mentale
 
 “Computer Science is no more about computers than astronomy is about telescopes.”
-
 – Edsger W. Dijkstra
-
-There are two things we need to clarify first before we get down to business:
+		
+	
+	There are two things we need to clarify first before we get down to business:
 
 What is a design pattern?
 What does ‘complex’ mean?
-From Wikipedia:
 
-“In software engineering, a design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. A design pattern is not a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.”
+	From Wikipedia:
 
-From Dictionary.com:
+	“In software engineering, a design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. A design pattern is not a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.”
+	
 
-com·plex   [adj., v. kuhm-pleks, kom-pleks; n. kom-pleks] adjective
+	From Dictionary.com:
+com·plex   [adj., v. kuhm-pleks, kom-pleks; n. kom-pleks] 
+
+adjective
 
 composed of many interconnected parts; compound; composite: a complex highway system.
-characterized by a very complicated or involved arrangement of parts, units, etc.: complex machinery
-so complicated or intricate as to be hard to understand or deal with: a complex problem.
-“Software in the Key of Web” (SITKOW) is a design pattern for complex systems. A general reusable solution for creating software composed of many interconnected parts that each can be characterized as a complicated or an involved arrangement of simpler parts. 
 
-The goal of SITKOW is to avoid creating systems that are so complicated that they become hard to understand or deal with. To put it more poetically:
+characterized by a very complicated or involved arrangement of parts, units, etc.: complex machinery
+
+so complicated or intricate as to be hard to understand or deal with: a complex problem.
+	
+
+	“Software in the Key of Web” (SITKOW) is a design pattern for complex systems. A general reusable solution for creating software composed of many interconnected parts that each can be characterized as a complicated or an involved arrangement of simpler parts. 
+	
+	The goal of SITKOW is to avoid creating systems that are so complicated that they become hard to understand or deal with. To put it more poetically:
 
 Software in the Key of Web is writing software the way composers write music.
 
-Thereare only two guidelines for SITKOW:
+
+There are only two guidelines for SITKOW:
+
 
 Every part of the system has a path that follows the pattern /model/key/model/key/
-Every part of the system supports the 4 basic operations of persistent storage: create, read, update, and delete (CRUD).
+
+Every part of the system supports the 4 basic operations of persistent storage: create, read, update, and delete (CRUD).
 
 
 
@@ -65,20 +97,94 @@ Second Movement
 Adagio Rendersi Conto Di
 
 “The brain is like a muscle. When it is in use we feel very good. Understanding is joyous.”
-
 Carl Sagan
-How would YOU create a system that follows the SITKOW guidelines? It’s your turn to take out your code editor and play your first node, err… note.
 
-The SITKOW guidelines restated in a slightly different form:
+	How would YOU create a system that follows the SITKOW guidelines? It’s your turn to take out your code editor and play your first node, err... note.
+
+	The SITKOW guidelines restated in a slightly different form:
 
 Everything is a node
-Nodes have a path that follows the pattern: /model/key/model/key/
-Nodes are accessed and manipulated through CRUD operations.
-Nodes can contain other nodes in the pattern /model/key/model/key/
-Your assignment is to create a system that satisfies the above conditions.
 
-What language did you use? How does it work? Was it easy or hard to do? What problems or issues did you run into. Post your solution to github with the tag ‘SITKOW’, tweet a link to your solution via Twitter, and share the link with your friends on Facebook.
+Nodes have a path that follows the pattern:
+ 	
+	/model/key/model/key/
 
-As an extra incentive, I declare that your are not a coder/programmer/developer/software engineer if you can’t create a basic SITKOW system :-P
+Nodes can contain other nodes in the pattern 
+
+	/model/key/model/key/
+
+Nodes are accessed and manipulated through CRUD operations that work in the following fashion:
+node.create(‘/model/key/model/’,{data})
+node.read(‘/model/key/model/’)
+node.read(‘/model/key/model/key’)
+node.update(‘/model/key/model/key’,{value})
+node.delete(‘/model/key/model/key’)
+
+
+	Your assignment is to create a system that satisfies the above conditions.
+
+	What language did you use? How does it work? Was it easy or hard to do? What problems or issues did you run into. Post your solution to github with the tag ‘SITKOW’, tweet a link to your solution via Twitter, and share the link with your friends on Facebook.
+
+	As an extra incentive, I declare that your are not a coder/programmer/developer/software engineer if you can’t create a basic SITKOW system.
 
 Code on!
+		
+		
+Third Movement
+Variations on a Theme
+
+	A node by itself, like a single pluck of a piano key, doesn’t tell us a single thing about the rest of the song. One node does not a tree make. How do we go from a simple node to a complex system? One note to a symphony?
+
+	We need instruments; Software that follows the SITKOW guidelines to provide a system for storing and manipulating information. The /model/key/model/key/ pattern restricts the format of our data, but it doesn’t tell us what the root node is or what leaf nodes represent. This is where craftsmanship and imagination come in. This is also the biggest leap in understanding SITKOW.
+
+	The guidelines are meant to point you in the right direction, not write the software for you. You have to decide what your models are, how they work, and what values they represent. A crucial part of answering these questions depends on how you are going to store that information. In memory? On disk? In a database? On screen? 
+
+	Your storage method represents your root node. Your models and how they are structured should flow from the root. A database for a root would use tables for models. Disk-based storage would use folders and files. Memory-based and on-screen storage can be represented in a wide variety of ways. 
+
+	The only thing that matters is that you follow the /model/key/model/key/ pattern.
+
+
+Fourth Movement
+In the Key of WTF?
+
+"Everywhere I look and everything I see
+follows the same pattern: /model/key/model/key/"
+
+- Michael Hoover	
+
+	I want to leave this unfinished so let’s end with a little crazy...
+
+	A complex software system is going to be made up of many different pieces of technology. Following the SITKOW guidelines makes every piece, for all intents and purposes, look and work the same. There is a common baseline to every part of the system. I believe this is the most important reason for writing Software in the Key of Web.
+
+	
+	And just to try and garner some attention...
+	
+	When Artificial Intelligence is created the code will ‘look‘ like SITKOW. 
+
+	If this turns out to be true then the Singularity has started as of September 13th, 2012 at 11:21 a.m.
+
+	:-p
+ 
+
+		  
+
+	
+		
+	
+	
+	
+	
+	   
+
+	  
+	
+
+	
+	
+
+	
+
+	
+	
+
+	
